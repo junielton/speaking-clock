@@ -1,0 +1,132 @@
+body,
+html {
+	background: #44475a;
+	font-family: sans-serif;
+	width: 500px;
+	min-height: 250px;
+}
+
+.clock {
+	text-align: center;
+}
+
+.clock h2 {
+	color: #50fa7b;
+	font-size: 60px;
+	padding: 0;
+	margin: 20px 0 0 0;
+}
+
+.clock select {
+	height: 30px;
+	outline: none;
+	background-color: #bd93f9;
+	border: none;
+	color: #282a36;
+	font-size: 16px;
+	border-radius: 5px;
+	width: 400px;
+}
+
+.interval {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.clock h3,
+span {
+	color: #8be9fd;
+	margin: 10px;
+}
+
+input[type="range"] {
+	width: 100%;
+	margin: 9.75px 0;
+	background-color: transparent;
+	-webkit-appearance: none;
+}
+input[type="range"]:focus {
+	outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+	background: #ff79c6;
+	border: 0px solid rgba(0, 1, 1, 0);
+	border: 0;
+	border-radius: 25px;
+	width: 100%;
+	height: 6.5px;
+	cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+	margin-top: -9.75px;
+	width: 26px;
+	height: 26px;
+	background: #50fa7b;
+	border: 0;
+	border-radius: 50px;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+	background: #ff79c6;
+}
+input[type="range"]::-moz-range-track {
+	background: #ff79c6;
+	border: 0px solid rgba(0, 1, 1, 0);
+	border: 0;
+	border-radius: 25px;
+	width: 100%;
+	height: 6.5px;
+	cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb {
+	width: 26px;
+	height: 26px;
+	background: #50fa7b;
+	border: 0;
+	border-radius: 50px;
+	cursor: pointer;
+}
+input[type="range"]::-ms-track {
+	background: transparent;
+	border-color: transparent;
+	border-width: 9.75px 0;
+	color: transparent;
+	width: 100%;
+	height: 6.5px;
+	cursor: pointer;
+}
+input[type="range"]::-ms-fill-lower {
+	background: #ff79c6;
+	border: 0px solid rgba(0, 1, 1, 0);
+	border: 0;
+	border-radius: 50px;
+}
+input[type="range"]::-ms-fill-upper {
+	background: #ff79c6;
+	border: 0px solid rgba(0, 1, 1, 0);
+	border: 0;
+	border-radius: 50px;
+}
+input[type="range"]::-ms-thumb {
+	width: 26px;
+	height: 26px;
+	background: #50fa7b;
+	border: 0;
+	border-radius: 50px;
+	cursor: pointer;
+	margin-top: 0px;
+	/*Needed to keep the Edge thumb centred*/
+}
+input[type="range"]:focus::-ms-fill-lower {
+	background: #ff79c6;
+}
+input[type="range"]:focus::-ms-fill-upper {
+	background: #ff79c6;
+}
+
+@supports (-ms-ime-align: auto) {
+	input[type="range"] {
+		margin: 0;
+	}
+}

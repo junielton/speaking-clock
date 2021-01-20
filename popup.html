@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>tell me time speaking clock</title>
+	</head>
+	<body>
+		<section class="clock">
+			<div id="clock">
+				<h2></h2>
+				<h3 hidden></h3>
+			</div>
+
+			<h3>Selecione um intervalo</h3>
+
+			<div class="interval">
+				<input id="range" type="range" min="1" max="60" />
+				<h3><span id="interval">30</span>Minutos</h3>
+			</div>
+
+			<select name="voice" id="voices"> </select>
+		</section>
+		<script src="popup.js"></script>
+	</body>
+</html>
